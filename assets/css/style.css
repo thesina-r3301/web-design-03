@@ -1,0 +1,169 @@
+@font-face {
+	font-family: 'yekan';
+	src: url('../font/Yekan.ttf');
+}
+
+* {
+	font-family: 'yekan';
+	direction: rtl;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none !important;
+	color: #FFF;
+}
+
+::selection {
+	color: #E8C872;
+	background-color: #FFF;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+	position: relative;
+	padding-bottom: 13px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.title::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	height: 1px;
+	background: #E8C872;
+	z-index: 1;
+}
+
+
+.text-justify {
+	text-align: justify;
+}
+
+/* Header */
+
+header {
+	background-image: url('../img/header-cover.jpg');
+	background-size: cover;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.logo img {
+	width: 150px;
+}
+
+.bg-blur {
+	background-color: rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(100px);
+	border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+.move-down svg {
+	padding: 9px 12px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	color: #fff;
+	animation: move-down 3s infinite;
+}
+
+@keyframes move-down {
+	0% {
+		margin-top: 0%;
+	}
+
+	30% {
+		margin-top: 5%;
+	}
+
+	50% {
+		margin-top: 3%;
+	}
+
+	70% {
+		margin-top: 5%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+}
+
+/* content */
+
+.about-items {
+	height: 200px;
+}
+
+.service-item img {
+	padding: 10px;
+	width: 300px;
+	height: 200px;
+	border-radius: 15px;
+	cursor: pointer;
+	filter: grayscale(1);
+	transition: all .5s;
+}
+
+.service-item img:hover {
+	scale: 1.1;
+	filter: none;
+}
+
+.portfolio-item img {
+	padding: 10px;
+	width: 300px;
+	height: 200px;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.portfolio-item img:hover {
+	scale: 1.1;
+	filter: grayscale(1);
+}
+
+.contact {
+	background-image: url(../img/contact-bg.jpg);
+	width: 80vw;
+	height: 70vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 15px;
+	position: relative;
+}
+
+.contact form {
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.contact form textarea {
+	resize: none;
+}
+
+.copyright {
+	border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.cp-title a p {
+	color: #fff;
+}
